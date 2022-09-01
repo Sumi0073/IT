@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INFORMATION TECHNOLOGY</title>
+
+    <link rel="icon" href="https://s3.ap-south-1.amazonaws.com/einetic/cdn/paper/d/f/1679091c5a880faf6fb5e6087eb1b2dc/makaut.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Indie+Flower&family=Poppins:ital,wght@0,600;1,300&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .row {
+            padding: 1%;
+        }
+        
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            align-items: center;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        body {
+            background: linear-gradient(92.69deg, #82D4F8 5.04%, rgba(255, 255, 255, 0) 53.88%, rgba(157, 222, 249, 0.78125) 77.7%), #FFFFFF;
+            margin: 0%;
+        }
+        
+        img {
+            border-radius: 3%;
+        }
+        
+        .as {
+            background-color: rgba(2, 4, 90, 0.349);
+            text-align: justify;
+            font-size: 19px;
+            padding: 0% 5% 1% 5%;
+            font-family: sans-serif;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        
+        .sc {
+            margin: 0;
+            background: #222;
+            color: white;
+        }
+        
+        .contact {
+            padding: 5%;
+            background-color: black;
+            margin: 0;
+        }
+        
+        .contact .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .contact .row .title {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 30px;
+            padding-bottom: 1%;
+        }
+        
+        .contact .row .info h3 {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            color: #eee;
+            font-weight: normal;
+        }
+        
+        .contact .row .info h3 i {
+            padding-right: 0;
+            color: var(--yellow);
+        }
+        
+        #map {
+            height: 20%;
+            width: 50%;
+        }
+        
+        .menu-btn {
+            background-color: #040008;
+            color: white;
+            padding: 16px;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: none;
+        }
+        
+        .dropdown-menu {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .menu-content {
+            display: none;
+            position: absolute;
+            background-color: #017575;
+            min-width: 160px;
+            z-index: 1;
+        }
+        
+        nav {
+            background-color: #017575;
+        }
+        
+        .links,
+        .links-hidden {
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .links-hidden {
+            display: block;
+        }
+        
+        .links {
+            display: inline-block;
+        }
+        
+        .links-hidden:hover,
+        .links:hover {
+            background-color: rgb(8, 107, 46);
+        }
+        
+        .dropdown-menu:hover .menu-content {
+            display: block;
+        }
+        
+        .dropdown-menu:hover .menu-btn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="https://media.9curry.com/uploads/organization/image/1881/makaut-wb-logo.png" height="36" alt="DEPARTMENT OF INFORMATION TECHNOLOGY, MAKAUT">
+            </a>
+            <a href="#" class="navbar-brand">DEPARTMENT OF INFORMATION TECHNOLOGY, MAKAUT</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                <div class="navbar-nav ms-auto" id="as">
+                    <img src="nac.png" align='right' width="20%" height="40%">
+
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+
+                    <a href="faculty.html" class="nav-item nav-link active">Faculty</a>
+
+                    <a href="index.html" class="nav-item nav-link ">Facilities</button>
+                       
+                    <a href="#cr7" class="nav-item nav-link">CONTACT</a>
+                </div>
+
+            </div>
+        </div>
+    </nav><br>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/Amitabha-Sinha-3.jpg" alt="Amitabha Sinha" style="width:80%">
+                <div class="container">
+                    <h2>Prof. Amitabha Sinha</h2>
+                    <p class="title">Professor (On Deputation)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/sd.jpg" alt=" Sibamay Dasgupta" style="width:80%">
+                <div class="container">
+                    <h2> Prof. Sibamay Dasgupta</h2>
+                    <p class="title">
+                        Professor (On Deputation)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/ProfSwapanBhattacharya.jpg" alt=" Swapan Bhattacharya" style="width:80%">
+                <div class="container">
+                    <h2>Prof. Swapan Bhattacharya
+                    </h2>
+                    <p class="title"> Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/team-1.jpg" alt=" Dr. Somdatta Chakravortty" style="width:80%">
+                <div class="container">
+                    <h2> Dr. Somdatta Chakravortty </h2>
+                    <p class="title">
+                        Associate Professor & HoD</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/team-2.jpg" alt="Debasis Giri" style="width:80%">
+                <div class="container">
+                    <h2>Dr. Debasis Giri
+                    </h2>
+                    <p class="title">Associate Professor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/aniruddha.jpg" alt="Aniruddha Dey" style="width:80%">
+                <div class="container">
+                    <h2>Dr. Aniruddha Dey </h2>
+                    <p class="title">
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/jadav.jpg" alt="  Jadav Ch. Das" style="width:80%">
+                <div class="container">
+                    <h2> Dr. Jadav Ch. Das </h2>
+                    <p class="title">
+
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/Nabanita.jpeg" alt="Dr. Nabanita Ganguly
+                " style="width:80%">
+                <div class="container">
+                    <h2>Dr. Nabanita Ganguly
+                    </h2>
+                    <p class="title">Assistant Professor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/team-5.jpg" alt="Dipanwita Ghosh" style="width:80%">
+                <div class="container">
+                    <h2>Ms. Dipanwita Ghosh
+                    </h2>
+                    <p class="title">
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/team-12.jpg" alt="   Dipika Dhara" style="width:80%">
+                <div class="container">
+                    <h2> Ms. Dipika Dhara
+                    </h2>
+                    <p class="title">
+
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/JoySamadder.jpg" alt="Joy Samadder
+                " style="width:80%">
+                <div class="container">
+                    <h2>MR.Joy Samadder
+                    </h2>
+                    <p class="title">Assistant Professor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/team-9.jpg" alt="Kamalika Bhattacharya" style="width:80%">
+                <div class="container">
+                    <h2>Ms. Kamalika Bhattacharya
+                    </h2>
+                    <p class="title">
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/team-3.jpg" alt="Ms. Sayantani Saha" style="width:80%">
+                <div class="container">
+                    <h2>Ms. Sayantani Saha </h2>
+                    <p class="title">
+
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/sayani.jpg" alt="Ms. Sayani Manna
+                " style="width:80%">
+                <div class="container">
+                    <h2>Ms. Sayani Manna
+                    </h2>
+                    <p class="title">Assistant Professor</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://it.makautwb.ac.in/img/Kamarujjaman.jpg" alt="Kamarujjaman" style="width:77%">
+                <div class="container">
+                    <h2>Kamarujjaman
+                    </h2>
+                    <p class="title">
+                        Assistant Professor</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="contact" id="cr7">
+
+        <div class="row">
+
+            <h3 class="title">contact info</h3>
+
+            <div class="col-sm-4 info">
+                <p><br></p>
+                <h3> <i class="fas fa-envelope" style="color: rgb(221, 1, 1);"></i> it.makaut@gmail.com</h3>
+                <h3> <i class="fas fa-phone" style="color: rgb(32, 20, 206);"></i> +91 8981153691 </h3>
+                <h3> <i class="fas fa-map-marker-alt" style="color: rgb(185, 9, 9);"></i><br> NH-12 (Old NH-34) Simhat<br> Haringhata, Nadia 741249, West Bengal </h3>
+            </div>
+            <div class="col-sm-8" align="right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58780.79115780857!2d88.54313!3d22.957612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3cbdf3b9f157e355!2sMAKAUT%20MAIN%20CAMPUS!5e0!3m2!1sen!2sus!4v1646855671418!5m2!1sen!2sus" width="400"
+                    height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+    <div class="sc">
+        <h5 style="padding-left: 2%; text-align: left;"> &#64;2022 Copyright of INFORMATION TECHNOLOGY, MAKAUT &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Designed
+            by Sumi Chatterjee </h5>
+    </div>
+</body>
+
+</html>
